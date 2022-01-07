@@ -5,6 +5,7 @@
 Local Version Control
 
 ![image](https://user-images.githubusercontent.com/97256352/148582541-3873743e-b277-4a7a-b4fe-d4db40e54e0f.png)
+
 -- this is much more harder to use in a team environment
 
 Centralized Version Control
@@ -58,3 +59,15 @@ GITHub Example
 GIT  - Make Changes
 
 ![image](https://user-images.githubusercontent.com/97256352/148587258-6cc8f14c-f1e1-4763-8f25-cd4522ea4bcb.png)
+
+
+GIT - Redo Changes
+
+![image](https://user-images.githubusercontent.com/97256352/148587503-6292c9f5-8111-4b63-8c0a-d2c7b319d2f0.png)
+
+
+GIT - Synchronize Changes
+
+![image](https://user-images.githubusercontent.com/97256352/148587627-679f353b-9490-4e42-9a0b-90b40545c6d9.png)
+
+
