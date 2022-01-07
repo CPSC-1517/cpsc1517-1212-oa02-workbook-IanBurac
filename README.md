@@ -10,16 +10,20 @@ Local Version Control
 Centralized Version Control
 
 ![image](https://user-images.githubusercontent.com/97256352/148582679-f1ef8717-0f5e-4771-a9ba-a70813336f48.png)
+
 -- the data is available to everyone
 -- primarily used for source code
+
 
 Distributed Version Control
 
 ![image](https://user-images.githubusercontent.com/97256352/148583367-2d93edd6-59b0-4619-b998-8c33818e46e9.png)
 
+
 GIT Configuration
 
 ![image](https://user-images.githubusercontent.com/97256352/148583858-ca6017d8-d5a2-4190-86ae-cf47fd9ea809.png)
+
 
 GIT Terminology
 
@@ -39,4 +43,18 @@ GIT - Create Repositories
 Start a new repository or obtain one from an existing URL
 To create an empty GIT local repostitory in the current directory
 git init
-To create an empty GIT local repository in a directory named 1517-assignment
+
+
+GIT - Suppress Tracking
+
+![image](https://user-images.githubusercontent.com/97256352/148586565-191a2b56-46a3-4bd3-9bb7-8e25e13a136f.png)
+
+
+GITHub Example
+
+![image](https://user-images.githubusercontent.com/97256352/148586905-24112c59-fdc2-4382-a83e-ba2134a85843.png)
+
+
+GIT  - Make Changes
+
+![image](https://user-images.githubusercontent.com/97256352/148587258-6cc8f14c-f1e1-4763-8f25-cd4522ea4bcb.png)
