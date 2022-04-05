@@ -59,6 +59,8 @@ static void CreateHockeyPlayers()
 
         // Display the location absolute path of csv data file
         WriteLine($"Successfully created csv file at: {Path.GetFullPath(HockeyPlayerCsvFile)}");
+
+        ReadHockeyTeamFromJsonFile(HockeyTeamJsonFile);
     }
     catch (Exception ex)
     {
@@ -169,12 +171,12 @@ static HockeyTeam ReadHockeyTeamFromJsonFile(string jsonFilePath)
             WriteIndented = true,
             IncludeFields = true
         };
-        /*currentTeam = JsonSerializer.Deserialize<HockeyTeam>(jsonString, options);*/
+        currentTeam = JsonSerializer.Deserialize<HockeyTeam>(jsonString, options);
 
-        currentTeam = Newtonsoft.Json.JsonConvert.DeserializeObject<HockeyTeam>(jsonString, new Newtonsoft.Json.JsonSerializerSettings()
+        /*currentTeam = Newtonsoft.Json.JsonConvert.DeserializeObject<HockeyTeam>(jsonString, new Newtonsoft.Json.JsonSerializerSettings()
         {
             ConstructorHandling = Newtonsoft.Json.ConstructorHandling.AllowNonPublicDefaultConstructor
-        });
+        });*/
 
         DisplayHockeyTeam(currentTeam);
     }

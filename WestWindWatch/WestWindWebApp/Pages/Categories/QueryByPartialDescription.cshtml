@@ -1,0 +1,40 @@
+﻿@page
+@model WestWindWebApp.Pages.Categories.QueryByPartialDescriptionModel
+@{
+}
+<h1>Category Query by Partial Description</h1>
+
+<p>@Model.FeedbackMessage</p>
+
+<p>@Html.Raw(Model.FeedbackMessage)</p>
+
+@if(Model.SearchResultList.Count > 0)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>CategoryID</th>
+                <th>CategoryName</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.SearchResultList)
+            {
+                <tr>
+                    <td>@item.CategoryId</td>
+                    <td>@item.CategoryName</td>
+                    <td>@item.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<form method="post">
+    <label>Enter Category ID:</label>
+    <input type="text" asp-for="Searchvalue" placeholder="enter description here" />
+
+    <button type="submit" asp-page-handler="fetch">Fetch By Description</button>
+    <button type="submit" asp-page-handler="clear">Clear</button>
+</form>

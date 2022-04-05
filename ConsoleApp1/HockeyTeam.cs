@@ -50,7 +50,7 @@ namespace HockeyTeamSystem
         public TeamDivision Division { get; private set; }
 
         // Define an auto-implemented readonly property for the HockeyPlayers
-        public List<HockeyPlayer> HockeyPlayers { get; } = new List<HockeyPlayer>();
+        public List<HockeyPlayer> HockeyPlayers { get; set; } = new List<HockeyPlayer>();
 
         // Define a read-only property for Playercount
         public int PlayerCount
@@ -82,6 +82,7 @@ namespace HockeyTeamSystem
             // validate that the number of players is less than 23
 
             // validate that player (by primary number) is not already on the team
+
             HockeyPlayers.Add(player);
         }
 

@@ -1,0 +1,17 @@
+﻿@page "{RegionID?}" // Define a route balue for RegionID
+@model WestWindWebApp.Pages.Regions.RegionQueryOneModel
+@{
+    ViewData["Title"] = "Primary Key Region Query";
+}
+<h1>Query: Region query by primary key</h1>
+
+<p>@Model.FeedbackMessage</p>
+
+<form method="post">
+    <label>Enter RegionID:</label>
+    <input type="number" asp-for="RegionID" placeholder="Enter RegionID to search for" required />
+    <br />
+    <button type="submit" asp-page-handler="Search">Search By RegionID</button>
+    &nbsp;&nbsp;
+    <button type="submit" asp-page-handler="Clear">Clear</button>
+</form>

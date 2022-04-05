@@ -1,0 +1,29 @@
+﻿@page
+@model WestWindWebApp.Pages.Categories.QueryByIdModel
+@{
+}
+<h1>Category Query by Primary Key (CategoryID)</h1>
+
+<p>@Model.FeedbackMessage</p>
+
+<p>@Html.Raw(Model.FeedbackMessage)</p> 
+
+<form method="post">
+    <label>Enter Category ID:</label>
+    <input type="number" asp-for="searchId" placeholder="enter category id here" />
+
+    <button type="submit" asp-page-handler="fetch">Fetch By Id</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>CategoryID</th>
+            <th>CategoryName</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+            @Html.Raw(Model.FeedbackMessage)
+    </tbody>
+</table>
